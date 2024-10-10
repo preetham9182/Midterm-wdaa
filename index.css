@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.portfolio-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    background-color:black;
+    color: white;
+}
+
+header {
+    padding: 30px 20px;
+}
+
+.header-wrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-wrapper > :nth-child(1) {
+    justify-self: start; /* Align first item to the start of its grid area */
+}
+
+.header-wrapper > :nth-child(2) {
+    justify-self: center; /* Center the second item */
+}
+
+.header-wrapper > :nth-child(3) {
+    justify-self: end; /* Align the third item to the end of its grid area */
+}
+
+.menu-bar{
+    display: none;
+    height: 60px;
+    width: 60px;
+}
+.nav-bar-mobile{
+    display: none;
+    margin-left: 20px;
+}
+
+.toungue-open-wrapper{
+    width: 100%;
+    text-align: center;
+}
+.tongue-open-mobile{
+    display: none;
+}
+.site-logo {
+    color:white;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+}
+
+nav ul li button {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: black;
+    border: 0;
+    cursor: pointer;
+}
+
+nav ul li button:hover { /* No space between button and :hover */
+    color: white;
+    background-color: skyblue;
+
+}
+
+
+
+.intro-section {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding: 45px 45px 60px 45px ;
+    margin: 20px 0;
+    gap: 60px;
+}
+.intro-section h2{
+    color: skyblue;
+    margin: 0rem  0rem 2rem  0rem;
+    font-size: 3rem;
+}
+.intro-section p{
+    line-height: 100%;
+    font-size: 1.1rem;
+    margin: 20px 0px 0px 0px;
+}
+
+/* hobies Section */
+#hobbies-section {
+    padding: 20px;
+    text-align: center;
+}
+
+#hobbies-section h2 {
+    font-size: 3rem;
+    color: skyblue;
+    margin-bottom: 2rem;
+}
+
+.hobbies-section_row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 20px; /* Adds space between the columns */
+    max-width: 1200px;
+    margin-top: 3rem;
+    margin: auto; /* Centers the grid container */
+}
+
+.Section_row {
+    display: grid;
+    grid-template-rows: auto 1fr; /* Sets up grid for the image and text */
+    padding: 10px;
+}
+
+.Section_row img {
+    width: 100%; /* Fixed width for all images */
+    height: 100%; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 5px;
+}
+
+.Section_row p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    text-align: center; /* Center the text */
+}
+
+/* publications section */
+
+.publications {
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+}
+.publications h2{
+    color: skyblue;
+    margin: 2rem;
+    font-size: 3rem;
+}
+.journal_articles_image{
+    height: 100%;
+    width: 100%;
+}
+.journal_articles_image img{
+    height: 100%;
+    width: 70%;
+    margin: 2rem;
+}
+.article_Content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+}
+
+.article_item {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: rgb(244, 242, 238);
+    margin-bottom: 2rem;
+}
+
+.article_item h6 {
+    font-size: 1rem;
+    color: black;
+}
+
+.article_item p {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.article_item span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: black;
+}
+
+/* Gallery */
+.photo-gallery_section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 10px; /* Adjust gap between images if needed */
+  }
+  
+  .photo-gallery_section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .Gallery{
+    margin: 3rem;
+  }
+#gallery-section h2{
+    color: skyblue;
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem;
+}
+ 
+
+#social-media-section h2{
+    text-align: center;
+    color: skyblue;
+    margin: 2rem;
+}
+
+.section-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.links-container {
+    display: grid;
+    gap: 20px; /* Adds space between rows */
+    margin: auto; /* Centers the entire container */
+   justify-content: center;
+}
+
+.link-item {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Ensures two columns: auto for image, and 1fr for the link */
+    align-items: center; /* Aligns image and link text vertically */
+    gap: 10px; /* Adds space between the image and the link text */
+   margin-bottom: 2rem;
+   
+}
+
+.icon-image {
+    height: 30px;
+    width: 30px;
+}
+
+.link-text a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+   cursor: pointer;
+   margin-left: 2rem;
+   margin-bottom: 2rem;
+}
+
+.link-text:hover {
+    color: #ff7700;
+
+}
+
+/* index.css */
+
+/* Hide all sections initially except the intro-section */
+section {
+    display: none;
+}
+
+#intro-section {
+    display: block; /* Show intro-section on load */
+}
+
+
+@media (max-width: 888px) {
+    .nav-bar{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+
+}
+@media (min-width: 888px) {
+    .nav-bar-mobile{
+        display: none !important;
+    }
+}
+
+@media(max-width: 620px){
+
+    .site-logo{
+        font-size: 1.5rem;
+    }
+    nav ul li button{
+        padding: 0;
+        font-size: 1rem;
+    }
+    .publications h2, #hobbies-section h2, 
+    .intro-section h2, #social-media-section h2 {
+        font-size: 2rem;
+    }
+    .Section_row p{
+        font-size: 10px;
+    }
+    .link-text a{
+        font-size: 12px;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    .icon-image{
+        height: 20px;
+        width: 20px;
+    }
+    .nav ul{
+        gap: 10px;
+    }
+}
+
+@media(max-width: 575px){
+    .tongue-open-mobile{
+        display: block;
+        width: 100%;
+    }
+    .tongue-open{
+        display: none;
+    }
+    .intro-section{
+        grid-template-columns:1fr;
+    }
+
+}
+@media(max-width: 575px){
+    .article_Content{
+        gap: 10px;
+    }
+    .article_item p{
+        font-size: 0.8rem;
+    }
+    .article_item h6{
+        font-size: 0.6rem;
+    }
+}
